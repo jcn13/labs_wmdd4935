@@ -1,7 +1,5 @@
-let fs = require('fs')
-let location = process.argv[2]
+const mymodule = require('./mymodule')
+const location = process.argv[2]
+const extension = process.argv[3]
 
-fs.readdir(location, function(err, data){
-	array = data.toString()
-	console.log(array)
-		
+mymodule(location, extension)
